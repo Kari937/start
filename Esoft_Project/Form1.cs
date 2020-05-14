@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
-    public partial class Form1 : Form
+    public partial class menu : Form
     {
-        public Form1()
+        public menu()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonOpenClients_Click(object sender, EventArgs e)
+        {
+            Form formClient = new FormClient();
+            formClient.Show();
         }
     }
 }
