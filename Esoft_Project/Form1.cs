@@ -32,5 +32,11 @@ namespace Esoft_Project
             Form formClient = new FormClient();
             formClient.Show();
         }
+
+        private void buttonOpenAgents_Click(object sender, EventArgs e)
+        {
+            Form formRieltors = new FormRieltors();
+            formRieltors.Show();
+        }
     }
 }
