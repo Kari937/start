@@ -5,6 +5,23 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="Хранилище firstModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="RealEstateSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Address_City" Type="nvarchar(max)" />
+          <Property Name="Address_Steet" Type="nvarchar(max)" />
+          <Property Name="Address_House" Type="nvarchar(max)" />
+          <Property Name="Address_Number" Type="nvarchar(max)" />
+          <Property Name="Coordinate_latitude" Type="float" />
+          <Property Name="Coordinate_longitude" Type="float" />
+          <Property Name="Type" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TotalArea" Type="float" />
+          <Property Name="TotalFloors" Type="int" />
+          <Property Name="Rooms" Type="int" />
+          <Property Name="Floor" Type="int" />
+        </EntityType>
         <EntityType Name="Table_1">
           <Key>
             <PropertyRef Name="id" />
@@ -27,6 +44,7 @@
           <Property Name="Percentage" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Хранилище firstModelContainer">
+          <EntitySet Name="RealEstateSet" EntityType="Self.RealEstateSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Table_1" EntityType="Self.Table_1" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Table_2" EntityType="Self.Table_2" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -35,6 +53,23 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="firstModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="RealEstateSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Address_City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address_Steet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address_House" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address_Number" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Coordinate_latitude" Type="Double" />
+          <Property Name="Coordinate_longitude" Type="Double" />
+          <Property Name="Type" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TotalArea" Type="Double" />
+          <Property Name="TotalFloors" Type="Int32" />
+          <Property Name="Rooms" Type="Int32" />
+          <Property Name="Floor" Type="Int32" />
+        </EntityType>
         <EntityType Name="Table_1">
           <Key>
             <PropertyRef Name="id" />
@@ -57,6 +92,7 @@
           <Property Name="Percentage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityContainer Name="firstEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="RealEstateSet" EntityType="Self.RealEstateSet" />
           <EntitySet Name="Table_1" EntityType="Self.Table_1" />
           <EntitySet Name="Table_2" EntityType="Self.Table_2" />
         </EntityContainer>
@@ -66,6 +102,24 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Хранилище firstModelContainer" CdmEntityContainer="firstEntities">
+          <EntitySetMapping Name="RealEstateSet">
+            <EntityTypeMapping TypeName="firstModel.RealEstateSet">
+              <MappingFragment StoreEntitySet="RealEstateSet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+                <ScalarProperty Name="Address_Steet" ColumnName="Address_Steet" />
+                <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+                <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+                <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+                <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+                <ScalarProperty Name="TotalFloors" ColumnName="TotalFloors" />
+                <ScalarProperty Name="Rooms" ColumnName="Rooms" />
+                <ScalarProperty Name="Floor" ColumnName="Floor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Table_1">
             <EntityTypeMapping TypeName="firstModel.Table_1">
               <MappingFragment StoreEntitySet="Table_1">
