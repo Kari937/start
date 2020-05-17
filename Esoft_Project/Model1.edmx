@@ -9,14 +9,14 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Address_City" Type="nvarchar(max)" />
           <Property Name="Address_Steet" Type="nvarchar(max)" />
           <Property Name="Address_House" Type="nvarchar(max)" />
           <Property Name="Address_Number" Type="nvarchar(max)" />
           <Property Name="Coordinate_latitude" Type="float" />
           <Property Name="Coordinate_longitude" Type="float" />
-          <Property Name="Type" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="int" Nullable="false" />
           <Property Name="TotalArea" Type="float" />
           <Property Name="TotalFloors" Type="int" />
           <Property Name="Rooms" Type="int" />
@@ -57,14 +57,14 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Address_City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Address_Steet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Address_House" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Address_Number" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Coordinate_latitude" Type="Double" />
           <Property Name="Coordinate_longitude" Type="Double" />
-          <Property Name="Type" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
           <Property Name="TotalArea" Type="Double" />
           <Property Name="TotalFloors" Type="Int32" />
           <Property Name="Rooms" Type="Int32" />

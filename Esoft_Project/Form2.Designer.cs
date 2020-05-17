@@ -33,6 +33,11 @@
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelPercentage = new System.Windows.Forms.Label();
             this.listViewRieltors = new System.Windows.Forms.ListView();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
@@ -40,11 +45,6 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
-            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -105,6 +105,30 @@
             this.listViewRieltors.View = System.Windows.Forms.View.Details;
             this.listViewRieltors.SelectedIndexChanged += new System.EventHandler(this.listViewRieltors_SelectedIndexChanged);
             // 
+            // ID
+            // 
+            this.ID.Text = "ID";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Имя";
+            this.columnHeader2.Width = 85;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Отчество";
+            this.columnHeader3.Width = 101;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Фамилия";
+            this.columnHeader4.Width = 83;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Проценты";
+            this.columnHeader5.Width = 95;
+            // 
             // textBoxLastName
             // 
             this.textBoxLastName.Location = new System.Drawing.Point(12, 238);
@@ -135,60 +159,43 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.buttonAdd.Location = new System.Drawing.Point(180, 340);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(100, 45);
             this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(391, 340);
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonEdit.Location = new System.Drawing.Point(383, 340);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdit.Size = new System.Drawing.Size(100, 45);
             this.buttonEdit.TabIndex = 10;
             this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(597, 340);
+            this.buttonDel.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonDel.Location = new System.Drawing.Point(572, 340);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(75, 23);
+            this.buttonDel.Size = new System.Drawing.Size(100, 45);
             this.buttonDel.TabIndex = 11;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
-            // 
-            // ID
-            // 
-            this.ID.Text = "ID";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Имя";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Отчество";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Фамилия";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Проценты";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(567, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(567, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(105, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -197,6 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(684, 461);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonDel);
