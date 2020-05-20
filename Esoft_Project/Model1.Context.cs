@@ -25,8 +25,12 @@ namespace Esoft_Project
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<DealSet> DealSet { get; set; }
+        public virtual DbSet<DemandSet> DemandSet { get; set; }
         public virtual DbSet<RealEstateSet> RealEstateSet { get; set; }
+        public virtual DbSet<SupplySet> SupplySet { get; set; }
         public virtual DbSet<Table_1> Table_1 { get; set; }
         public virtual DbSet<Table_2> Table_2 { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

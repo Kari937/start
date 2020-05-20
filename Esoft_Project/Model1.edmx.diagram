@@ -4,10 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9ea73d8be02046539b2f4e5477c81268" Name="Diagram1">
-        <EntityTypeShape EntityType="firstModel.RealEstateSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="firstModel.Table_1" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="firstModel.Table_2" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+      <Diagram DiagramId="cf3f110fd74f494abad0962a05d29fd8" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="firstModel.DealSet" Width="1.5" PointX="12.125" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="firstModel.DemandSet" Width="1.5" PointX="9" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="firstModel.RealEstateSet" Width="1.5" PointX="4.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="firstModel.SupplySet" Width="1.5" PointX="9" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="firstModel.Table_1" Width="1.5" PointX="4.375" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="firstModel.Table_2" Width="1.5" PointX="4.375" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="firstModel.Users" Width="1.5" PointX="12" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="firstModel.FK_DealSet_DemandSet" ManuallyRouted="false" />
+        <AssociationConnector Association="firstModel.FK_DealSet_SupplySet" ManuallyRouted="false" />
+        <AssociationConnector Association="firstModel.FK_DemandSet_Table_1" ManuallyRouted="false" />
+        <AssociationConnector Association="firstModel.FK_DemandSet_Table_2" ManuallyRouted="false" />
+        <AssociationConnector Association="firstModel.FK_SupplySet_RealEstateSet" ManuallyRouted="false" />
+        <AssociationConnector Association="firstModel.FK_SupplySet_Table_1" ManuallyRouted="false" />
+        <AssociationConnector Association="firstModel.FK_SupplySet_Table_2" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

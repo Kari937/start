@@ -56,35 +56,35 @@
             // textBoxFirstName
             // 
             this.textBoxFirstName.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxFirstName.Location = new System.Drawing.Point(3, 115);
+            this.textBoxFirstName.Location = new System.Drawing.Point(8, 77);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
             this.textBoxFirstName.TabIndex = 0;
             // 
             // textBoxMiddleName
             // 
-            this.textBoxMiddleName.Location = new System.Drawing.Point(3, 167);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(8, 116);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
             this.textBoxMiddleName.TabIndex = 1;
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(3, 219);
+            this.textBoxLastName.Location = new System.Drawing.Point(8, 155);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
             this.textBoxLastName.TabIndex = 2;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(3, 269);
+            this.textBoxPhone.Location = new System.Drawing.Point(8, 194);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhone.TabIndex = 3;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(3, 317);
+            this.textBoxEmail.Location = new System.Drawing.Point(8, 233);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
             this.textBoxEmail.TabIndex = 4;
@@ -92,7 +92,7 @@
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(8, 99);
+            this.labelFirstName.Location = new System.Drawing.Point(5, 61);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(29, 13);
             this.labelFirstName.TabIndex = 5;
@@ -102,7 +102,7 @@
             // labelMiddleName
             // 
             this.labelMiddleName.AutoSize = true;
-            this.labelMiddleName.Location = new System.Drawing.Point(0, 203);
+            this.labelMiddleName.Location = new System.Drawing.Point(5, 139);
             this.labelMiddleName.Name = "labelMiddleName";
             this.labelMiddleName.Size = new System.Drawing.Size(54, 13);
             this.labelMiddleName.TabIndex = 6;
@@ -111,7 +111,7 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(0, 151);
+            this.labelLastName.Location = new System.Drawing.Point(5, 100);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(56, 13);
             this.labelLastName.TabIndex = 7;
@@ -120,7 +120,7 @@
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(0, 253);
+            this.labelPhone.Location = new System.Drawing.Point(5, 178);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(52, 13);
             this.labelPhone.TabIndex = 8;
@@ -129,7 +129,7 @@
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(0, 301);
+            this.labelEmail.Location = new System.Drawing.Point(5, 217);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(37, 13);
             this.labelEmail.TabIndex = 9;
@@ -147,7 +147,7 @@
             this.listViewClient.FullRowSelect = true;
             this.listViewClient.GridLines = true;
             this.listViewClient.HideSelection = false;
-            this.listViewClient.Location = new System.Drawing.Point(109, 99);
+            this.listViewClient.Location = new System.Drawing.Point(114, 48);
             this.listViewClient.MultiSelect = false;
             this.listViewClient.Name = "listViewClient";
             this.listViewClient.Size = new System.Drawing.Size(563, 238);
@@ -188,8 +188,8 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonAdd.Location = new System.Drawing.Point(109, 343);
+            this.buttonAdd.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonAdd.Location = new System.Drawing.Point(223, 292);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(100, 45);
             this.buttonAdd.TabIndex = 11;
@@ -199,8 +199,8 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonEdit.Location = new System.Drawing.Point(343, 343);
+            this.buttonEdit.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEdit.Location = new System.Drawing.Point(329, 292);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(100, 45);
             this.buttonEdit.TabIndex = 12;
@@ -210,8 +210,8 @@
             // 
             // buttonDel
             // 
-            this.buttonDel.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonDel.Location = new System.Drawing.Point(572, 343);
+            this.buttonDel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonDel.Location = new System.Drawing.Point(435, 292);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(100, 45);
             this.buttonDel.TabIndex = 13;
@@ -222,7 +222,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(567, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(572, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(105, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -243,7 +243,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.ClientSize = new System.Drawing.Size(684, 364);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonDel);

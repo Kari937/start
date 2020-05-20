@@ -28,32 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.logo = new System.Windows.Forms.PictureBox();
             this.buttonOpenClients = new System.Windows.Forms.Button();
             this.buttonOpenAgents = new System.Windows.Forms.Button();
             this.buttonOpenRealEstates = new System.Windows.Forms.Button();
             this.buttonOpenDemands = new System.Windows.Forms.Button();
             this.buttonOpenSupplies = new System.Windows.Forms.Button();
             this.buttonOpenDeals = new System.Windows.Forms.Button();
+            this.labelHello = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // logo
-            // 
-            this.logo.BackColor = System.Drawing.Color.Cornsilk;
-            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.logo.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(2, 12);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(265, 447);
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // buttonOpenClients
             // 
             this.buttonOpenClients.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonOpenClients.Location = new System.Drawing.Point(2, 116);
+            this.buttonOpenClients.Location = new System.Drawing.Point(2, 137);
             this.buttonOpenClients.Name = "buttonOpenClients";
             this.buttonOpenClients.Size = new System.Drawing.Size(265, 48);
             this.buttonOpenClients.TabIndex = 1;
@@ -64,7 +53,7 @@
             // buttonOpenAgents
             // 
             this.buttonOpenAgents.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonOpenAgents.Location = new System.Drawing.Point(2, 170);
+            this.buttonOpenAgents.Location = new System.Drawing.Point(2, 191);
             this.buttonOpenAgents.Name = "buttonOpenAgents";
             this.buttonOpenAgents.Size = new System.Drawing.Size(265, 48);
             this.buttonOpenAgents.TabIndex = 2;
@@ -75,7 +64,7 @@
             // buttonOpenRealEstates
             // 
             this.buttonOpenRealEstates.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonOpenRealEstates.Location = new System.Drawing.Point(2, 224);
+            this.buttonOpenRealEstates.Location = new System.Drawing.Point(2, 245);
             this.buttonOpenRealEstates.Name = "buttonOpenRealEstates";
             this.buttonOpenRealEstates.Size = new System.Drawing.Size(265, 48);
             this.buttonOpenRealEstates.TabIndex = 3;
@@ -86,32 +75,56 @@
             // buttonOpenDemands
             // 
             this.buttonOpenDemands.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonOpenDemands.Location = new System.Drawing.Point(2, 278);
+            this.buttonOpenDemands.Location = new System.Drawing.Point(2, 299);
             this.buttonOpenDemands.Name = "buttonOpenDemands";
             this.buttonOpenDemands.Size = new System.Drawing.Size(265, 48);
             this.buttonOpenDemands.TabIndex = 4;
             this.buttonOpenDemands.Text = "Предложения";
             this.buttonOpenDemands.UseVisualStyleBackColor = false;
+            this.buttonOpenDemands.Click += new System.EventHandler(this.buttonOpenDemands_Click);
             // 
             // buttonOpenSupplies
             // 
             this.buttonOpenSupplies.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonOpenSupplies.Location = new System.Drawing.Point(2, 332);
+            this.buttonOpenSupplies.Location = new System.Drawing.Point(2, 353);
             this.buttonOpenSupplies.Name = "buttonOpenSupplies";
             this.buttonOpenSupplies.Size = new System.Drawing.Size(265, 48);
             this.buttonOpenSupplies.TabIndex = 5;
             this.buttonOpenSupplies.Text = "Потребности";
             this.buttonOpenSupplies.UseVisualStyleBackColor = false;
+            this.buttonOpenSupplies.Click += new System.EventHandler(this.buttonOpenSupplies_Click);
             // 
             // buttonOpenDeals
             // 
             this.buttonOpenDeals.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonOpenDeals.Location = new System.Drawing.Point(2, 386);
+            this.buttonOpenDeals.Location = new System.Drawing.Point(2, 407);
             this.buttonOpenDeals.Name = "buttonOpenDeals";
             this.buttonOpenDeals.Size = new System.Drawing.Size(265, 48);
             this.buttonOpenDeals.TabIndex = 6;
             this.buttonOpenDeals.Text = "Сделки";
             this.buttonOpenDeals.UseVisualStyleBackColor = false;
+            this.buttonOpenDeals.Click += new System.EventHandler(this.buttonOpenDeals_Click);
+            // 
+            // labelHello
+            // 
+            this.labelHello.AutoSize = true;
+            this.labelHello.Location = new System.Drawing.Point(12, 9);
+            this.labelHello.Name = "labelHello";
+            this.labelHello.Size = new System.Drawing.Size(44, 13);
+            this.labelHello.TabIndex = 7;
+            this.labelHello.Text = "Привет";
+            // 
+            // logo
+            // 
+            this.logo.BackColor = System.Drawing.Color.Cornsilk;
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logo.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.logo.Location = new System.Drawing.Point(2, 33);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(265, 447);
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // menu
             // 
@@ -119,6 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(279, 561);
+            this.Controls.Add(this.labelHello);
             this.Controls.Add(this.buttonOpenDeals);
             this.Controls.Add(this.buttonOpenSupplies);
             this.Controls.Add(this.buttonOpenDemands);
@@ -132,6 +146,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,6 +159,7 @@
         private System.Windows.Forms.Button buttonOpenDemands;
         private System.Windows.Forms.Button buttonOpenSupplies;
         private System.Windows.Forms.Button buttonOpenDeals;
+        private System.Windows.Forms.Label labelHello;
     }
 }
 
